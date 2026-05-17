@@ -1,5 +1,6 @@
 deployment:
   imageURL: 805778285734.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/payment
   imageVersion: IMAGE_VERSION
+  cartService: http://172.20.189.37:8080
 hpa:
   cpuUtilization: 20
