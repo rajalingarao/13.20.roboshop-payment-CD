@@ -64,8 +64,8 @@ pipeline {
                        
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding',
       credentialsId: 'aws-creds']]) {
-              
-              
+                
+                
                     sh """
                         aws eks update-kubeconfig --region ${region} --name ${project}-dev
                         cd helm
